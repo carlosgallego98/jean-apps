@@ -1,7 +1,6 @@
-import React from "react";
-import Loader from "./components/Loader/index";
-import { useQuery } from 'react-query';
 import { API_KEY } from "./constants";
+import { useQuery } from 'react-query';
+import Loader from "./components/Loader/index";
 import axios from "axios";
 import MapCard from "./components/MapCard/Map";
 import Geodata from "./core/types/Geodata";

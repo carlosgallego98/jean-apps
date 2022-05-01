@@ -21,7 +21,7 @@ export default function App() {
     }).then(res => res.data), { enabled: !!userIp });
 
   return (
-    <div className="flex mx-auto items-center place-content-center h-screen container">
+    <div className="flex mx-auto items-center place-content-center min-h-screen container">
       <Card className="py-6 mx-auto bg-indigo-800/30 max-w-xl w-full">
         {geodata ? (
           <div className="flex flex-col gap-4">

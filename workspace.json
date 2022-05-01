@@ -2,6 +2,9 @@
   "version": 2,
   "projects": {
     "calculate-download-time": "apps/calculate-download-time",
-    "calculate-download-time-e2e": "apps/calculate-download-time-e2e"
+    "calculate-download-time-e2e": "apps/calculate-download-time-e2e",
+    "components": "libs/components",
+    "whats-my-ip": "apps/whats-my-ip",
+    "whats-my-ip-e2e": "apps/whats-my-ip-e2e"
   }
 }

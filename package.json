@@ -9,10 +9,18 @@
   },
   "private": true,
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.0",
+    "autoprefixer": "^10.4.5",
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "postcss": "^8.4.13",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-leaflet": "^4.0.0",
+    "react-query": "^3.38.0",
     "regenerator-runtime": "0.13.7",
+    "tailwindcss": "^3.0.24",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -29,6 +37,7 @@
     "@types/node": "16.11.7",
     "@types/react": "18.0.1",
     "@types/react-dom": "18.0.0",
+    "@types/react-leaflet": "^2.8.2",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
     "babel-jest": "27.5.1",

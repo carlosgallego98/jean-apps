@@ -9,7 +9,7 @@
     }
   }
   label {
-    @apply transition-colors text-center self-center py-2 px-4 rounded-sm cursor-pointer hover:opacity-75 text-white font-medium;
+    @apply transition-all hover:bg-teal-100/5 text-center self-center py-2 px-4 rounded-sm cursor-pointer hover:opacity-75 text-white font-medium;
   }
 }
 label {

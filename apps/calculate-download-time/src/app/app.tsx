@@ -84,13 +84,10 @@ function App() {
                   <div className="flex justify-center">
                     {speedUnits.map((unit, index) => (
                       <div key={index} className={`${styles['text-input']} ${styles['text-input-unit']}`}>
-
                         <input type="radio" name="speed-unit" id={`speed-unit-${index}`} value={unit.bits}
                           checked={speedUnit === unit.bits}
                           onChange={() => setSpeedUnit(unit.bits)} hidden />
-
                         <label htmlFor={`speed-unit-${index}`}>{unit.label}</label>
-
                       </div>
                     ))}
                   </div>

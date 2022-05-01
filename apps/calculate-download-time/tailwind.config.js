@@ -8,7 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      fontFamily: {
+        display: ["Montserrat", "sans-serif"],
+        sans: ["Lato", "sans-serif"],
+      },
     },
   },
   plugins: [

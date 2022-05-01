@@ -12,7 +12,6 @@ export default function Map(location: Location) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <CircleMarker center={[lat, lng]}  pathOptions={{ color: 'gray' }} radius={50}>
-                <Popup>Popup in CircleMarker</Popup>
             </CircleMarker>
             <Marker position={[lat, lng]}>
                 <Popup>

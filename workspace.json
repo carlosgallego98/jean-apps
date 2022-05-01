@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "calculate-download-time": "apps/calculate-download-time",
+    "calculate-download-time-e2e": "apps/calculate-download-time-e2e"
+  }
+}

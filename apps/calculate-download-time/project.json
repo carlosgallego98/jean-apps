@@ -1,0 +1,85 @@
+{
+  "root": "apps/calculate-download-time",
+  "sourceRoot": "apps/calculate-download-time/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/calculate-download-time",
+        "index": "apps/calculate-download-time/src/index.html",
+        "baseHref": "/",
+        "main": "apps/calculate-download-time/src/main.tsx",
+        "polyfills": "apps/calculate-download-time/src/polyfills.ts",
+        "tsConfig": "apps/calculate-download-time/tsconfig.app.json",
+        "assets": [
+          "apps/calculate-download-time/src/favicon.ico",
+          "apps/calculate-download-time/src/assets"
+        ],
+        "styles": ["apps/calculate-download-time/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/calculate-download-time/src/environments/environment.ts",
+              "with": "apps/calculate-download-time/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "calculate-download-time:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "calculate-download-time:build:development"
+        },
+        "production": {
+          "buildTarget": "calculate-download-time:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/calculate-download-time/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/calculate-download-time"],
+      "options": {
+        "jestConfig": "apps/calculate-download-time/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

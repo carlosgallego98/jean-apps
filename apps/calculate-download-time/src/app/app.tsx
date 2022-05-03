@@ -128,7 +128,7 @@ function App() {
           </Card>
         </div>
 
-        <Footer />
+        <Footer icons={['tailwindcss', 'react', 'github']} />
       </Card>
     </div>
   );

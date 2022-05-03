@@ -40,7 +40,7 @@ export default function App() {
           </div>
         ) : error ? <div>{`${error}`}</div> : <Loader />
         }
-        <Footer />
+        <Footer icons={['tailwindcss', 'react', 'leaflet', 'github']} />
       </Card >
     </div >
   )

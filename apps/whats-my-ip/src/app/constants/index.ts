@@ -1,1 +1,1 @@
-export const API_KEY = "at_OfS1wdODEgbZNC9Zsa0ZO16PKQ5jt"
+export const API_KEY = proccess.env.IPIFY_KEY;
